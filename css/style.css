@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+ 
+}
+p {
+    font-family:  'Arial Narrow Bold', sans-serif;
+    font-size: 1.2em;
+}
+figcaption{
+    font-size: 2em;
+    color: rgb(162, 162, 248);
+    text-decoration: overline; 
+}
+#wrapper{
+    padding-left:10px;
+
+}
+#head{
+    grid-area: header;
+}
+#sec{
+    grid-area: section;
+}
+
+
+#desc img{
+    width: 300px;
+    height: 300px;
+}
+table, tr, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+table{
+    width: 400px;
+    text-align: center;
+}
+#butonBlueDark{
+    background-color: rgb(41, 56, 74);   
+}
+#butonYellow{
+    background-color: rgb(221, 158, 75);   
+}
+#butonGreen{
+    background-color: rgb(114, 243, 150);   
+}
+.butonColor{
+    height: 40px;
+    width:  100px;
+}
+#nameE{
+    background-color: rgb(251, 18, 18);   
+}
+
+#AndrAnimation{
+    position: absolute;
+    top: 70px;
+    right:100px;
+    float:right;
+    width: 100px;
+    height: 100px;
+   
+
+  
+    
+
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: step;
+}
+#AndrAnimation img{
+    height: 100px;
+    width: 50px;
+
+}
+   
+
+  
+
+
+
+#buttonBlock{
+   padding:40px; 
+    
+    width: 500px;
+}
+fieldset{
+    position: relative;
+    width: 800px;;
+    height: 150px;;
+    font-size: 2em;
+    color: brown;
+  
+    background-color: papayawhip;
+}
+
+@keyframes step{
+    0%{
+        right:  100px;
+    }
+    50%{
+        right: 300px;
+    }
+    100%{
+        right: 100px;
+    }
+}
+
+#mas{
+    position: absolute;
+   
+    width: 50px;
+    height:100px;
+    left: 400px;
+    top: 40px;
+    transform-origin: 150%  150%;
+    transform: rotate(180deg    );
+    
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-name: fly;
+    
+}
+#mas img{
+    height:45px;
+}
+
+@keyframes fly{ 
+
+    100%{
+        transform: rotate(720deg    );
+    }
+}
+#cl {
+    padding: 40px;
+}
+
+ul{
+    list-style-type: square;
+}
+ol{
+    list-style-type:upper-roman;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+     "header header"
+     "section sidebar"
+     "footer footer"
+
+}
+
+#sideBar{
+    width: 300px;
+    background-color:  rgb(116, 166, 236);
+    border-radius: 30px 40px;
+    border-style: dashed;
+    text-align: center;
+    grid-area: sidebar;
+}
+
+section{
+    border: solid rgb(41, 56, 74) 1px ;
+    margin-right: 12px;
+    padding-left: 200px;
+}
+
+footer{
+    background-color: rgb(49, 47, 47);
+    height: 200px;
+    border: solid black 2px;
+    grid-area: footer;
+    width: 1400px;
+}
+
+#as{
+    height: 100;
+    width:100px;
+}
+
+#foot{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+
+    
+
+}
+#foot div{
+    width: 200px;
+}
+input{
+    background-color: rgb(167, 240, 215);
+    height: 20px;
+}
+input:hover{
+    background-color:white;
+}
+

@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>First</title>
+    <link href="css/style.css"  rel="stylesheet">
+    <script>    
+            function backgroundCol(col){
+                switch(col){
+                    case "DarkBlue":
+                        document.body.style.backgroundColor = " rgb(41, 56, 74)";
+                        break;
+                        
+                    case "Yellow":
+                        document.body.style.backgroundColor = " rgb(221, 158, 75)";
+                        break;
+                    case "Green":
+                        document.body.style.backgroundColor = " rgb(114, 243, 150)";
+                        break;               
+                }      
+             }
+            function nameEdit(){   
+                document.getElementById("nameE").innerText = document.getElementById("youName").value
+            }
+        
+        </script>
+    
+</head>
+<body>
+    <div id="wrapper">
+        <div id="grid">
+            <header id="head">          
+                <form action="" method="GET" onsubmit="return false;"> 
+                    <fieldset>
+                        <legend >Поменять цвет фона</legend>
+                        <div id="buttonBlock">
+                            <button id="butonBlueDark" class="butonColor" value="BlueDark"  onclick="backgroundCol('DarkBlue')" > Темно-синий</button>
+                            <button id="butonYellow" class="butonColor" onclick="backgroundCol('Yellow')" > Желтый</button>
+                            <button id="butonGreen" class="butonColor" onclick="backgroundCol('Green')">Зеленый</button>
+                        </div>
+                        <div id="AndrAnimation"><img src="image/android.png"></div>
+                        <div id="mas"><img src="image/fly.png"></div>
+                    </fieldset>
+                    <div id="cl"><label> Введите ваше имя  <input id="youName" type="text" onchange="nameEdit()" ></label></div>
+                    </label>
+                    </form>
+
+                
+        
+                <h1>Hello <span id="nameE"></span></h1>
+            </header>
+
+        
+            <section id="sec">
+                <figure id="desc">        
+                <p>Lorem Ipsum is <strong> dummy text of</strong>s the printing<em> and typesetting</em> me industry. Lorem Ipsum has been 
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
+                        of type and scrambled i</p>
+                        <figcaption>Фото природы</figcaption>
+                <img src="image/nature.jpg" alt="Природа">
+                
+
+                </figure>
+
+                    <table>
+                        <caption> Lanquage</caption>
+                        <tr><th>No</th><th>Name</th><th colspan="2">Col</th><th>Language</th></tr>
+                        <tr><td>1</td><td>Ivan</td><td>5</td><td>8</td></td><td>Java</td></tr>
+                        <tr><td>2</td><td>Andrey</td><td>7</td><td>1</td><td>css</td></tr>
+                        <tr><td>3</td><td>Petya</td><td>6</td><td>4</td><td>Type</td></tr>
+                        <tr><td>4</td><td>Vasya</td><td >99</td><td>44</td><td>Type</td></tr>
+                        <tr><td rowspan="2">col</td><td>Vasya</td><td >99</td><td>44</td><td>Type</td></tr>
+                        <tr><td>5</td><td>8</td><td >99</td></tr>
+                    </table>
+                    <dl>
+                            <dt>Lorem Ipsum </dt>
+                            <dd>s simply dummy text of the printing and typesetting in</dd>
+                            <dt>assaffs</dt>
+                            <dd>Lorem Ipsum </dd>
+                            <dt>Lorem Ipsum </dt>
+                            <dd>s simply dummy text of the printing and typesetting in</dd>
+                        </dl>
+
+                        <ol>
+                            <li>my text of the pr</li>
+                            <li>en the industry'</li>
+                            <li>ce the 1500s, when an unk</li>
+                            <li>ley of type and scram</li>
+                        </ol>
+
+                        <ul>
+                                <li>my text of the pr</li>
+                                <li>en the industry'</li>
+                                <li>ce the 1500s, when an unk</li>
+                                <li>ley of type and scram</li>
+                        </ul>
+            </section>
+
+            <div id="sideBar">
+                <h2 class="align">Навигация</h2>
+                <nav>
+                    <p><a href="https://www.python.org" title="Python info">Python</a></p>
+                    <p><a href="https://www.python.org" title="Python info">StackOverflow</a></p>
+                    <p><a href="https://www.python.org" title="Python info">GitHub</a></p>
+                    <p><a href="https://www.google.com" title="Python info">Google</a></p>
+                </nav>
+            </div>
+        </div>
+
+        <footer id='foot'>
+            <div>
+                <h1>hgdhrt </h1>
+                <p>sfggfgdfsdssssdfsddsfda<br>ssaffssddfsdaklfsdlklffsdfsadsafdsfsdafsdasdf<br>k</p>
+            </div>
+            <div>
+                    <h1>hgdhrt </h1>
+                    <p>sfggfgdfsdssssdfsddsfda<br>ssaffssddfsdaklfsdlklffsdfsadsafdsfsdafsdasdf<br>k</p>
+            </div>
+            <div id=4>
+                <img  id="as" src="image/nature.jpg" alt="Природа" > 
+            </div>
+        </footer>
+        
+    </div>
+
+
+
+   
+    
+
+    
+</body>
+</html>
